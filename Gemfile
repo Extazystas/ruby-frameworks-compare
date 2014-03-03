@@ -17,11 +17,12 @@ gem 'rake'
 gem 'slim'
 gem 'mysql2'
 gem 'sequel'
+gem 'tilt', '1.4.1'
 
 # Test requirements
 
 # Padrino Stable Gem
-gem 'padrino', '0.11.2'
+gem 'padrino', '0.11.4'
 
 # Or Padrino Edge
 # gem 'padrino', :github => 'padrino/padrino-framework'
