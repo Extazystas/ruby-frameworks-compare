@@ -1,8 +1,8 @@
 require 'sinatra'
-require 'slim'
-require './models/post.rb'
+# require 'slim'
+
+# set :server, %w[unicorn]
 
 get '/' do
-  @post = Post.first
-  slim :index
+  'Hello, rord'
 end
