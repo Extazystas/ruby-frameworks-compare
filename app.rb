@@ -7,7 +7,7 @@ class App < Goliath::API
   include Goliath::Rack::Templates
 
   def response(env)
-    @post = Post.first
-    [200, {}, slim(:index)]
+    # @post = Post.first
+    [200, {}, 'text']
   end
 end
