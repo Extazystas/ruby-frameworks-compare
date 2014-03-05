@@ -1,5 +1,5 @@
 class PostsController < ApplicationController
   def index
-    @post = Post.first
+    render :text => 'test text'
   end
 end
