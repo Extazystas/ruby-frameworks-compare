@@ -5,7 +5,7 @@
  set output "benchmark.png"
 
  # graph a title
- set title "Unicorn: MySQL (Sequel)\n Time taken for tests: 1.737 seconds"
+ set title "Webrick: MySQL (Sequel)\n Time taken for tests: 3.931 seconds"
 
  # nicer aspect ratio for image size
  set size 1,0.7
@@ -20,4 +20,4 @@
  set ylabel "response time (ms)"
 
  # plot data from "foo.tsv" using column 9 with smooth sbezier lines
- plot "data/unicorn_mysql.tsv" using 10 smooth sbezier with lines title ''
+ plot "data/webrick_mysql.tsv" using 10 smooth sbezier with lines title ''
