@@ -3,10 +3,10 @@
  set term png size 1000, 800
 
  # save file to "benchmark.png"
- set output "goliath_all.png"
+ set output "all_no_view_no_db.png"
 
  # graph a title
- set title "Goliath"
+ set title "Rails, Sinatra, Padrino, Goliath: No Views and DB"
 
  # nicer aspect ratio for image size
  set size 1,1
@@ -20,8 +20,11 @@
  # y-axis label
  set ylabel "response time (ms)"
 
+ # position of legenda
+ set key left top
+
  # plot data from "foo.tsv" using column 9 with smooth sbezier lines
- plot "data/goliath_mysql_slim.tsv" using 10 smooth sbezier with lines title 'Views (Slim) + MySQL (Sequel): 9.628 seconds', \
-      "data/goliath_mysql.tsv" using 10 smooth sbezier with lines title 'MySQL (Sequel): 4.124 seconds', \
-      "data/goliath_slim.tsv" using 10 smooth sbezier with lines title 'Views (Slim): 5.770 seconds', \
-      "data/goliath.tsv" using 10 smooth sbezier with lines title 'No Views and DB: 2.239 seconds'
+ plot "data/rails.tsv" using 10 smooth sbezier with lines title 'Rails: 1.194 seconds', \
+      "data/thin.tsv" using 10 smooth sbezier with lines title 'Sinatra(thin): 0.669 seconds', \
+      "data/padrino_no_cache.tsv" using 10 smooth sbezier with lines title 'Padrino (no cache): 0.448 seconds', \
+      "data/goliath.tsv" using 10 smooth sbezier with lines title 'Goliath: 2.239 seconds'
