@@ -1,6 +1,6 @@
  # output as png image
  set terminal png
- set term png size 1000, 800
+ set term png size 1000, 1000
 
  # save file to "benchmark.png"
  set output "goliath_all.png"
@@ -19,6 +19,9 @@
 
  # y-axis label
  set ylabel "response time (ms)"
+
+ # position of legenda
+ set key left top
 
  # plot data from "foo.tsv" using column 9 with smooth sbezier lines
  plot "data/goliath_mysql_slim.tsv" using 10 smooth sbezier with lines title 'Views (Slim) + MySQL (Sequel): 9.628 seconds', \
