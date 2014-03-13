@@ -1,9 +1,9 @@
  # output as png image
  set terminal png
- set term png size 1000, 800
+ set term png size 1800, 1600
 
  # save file to "benchmark.png"
- set output "benchmark_test.png"
+ set output "sinatra_unicorn.png"
 
  # graph a title
  set title "Unicorn"
@@ -19,6 +19,9 @@
 
  # y-axis label
  set ylabel "response time (ms)"
+
+ # position of legenda
+ set key left top
 
  # plot data from "foo.tsv" using column 9 with smooth sbezier lines
  plot "data/unicorn_slim_mysql.tsv" using 10 smooth sbezier with lines title 'Views (Slim) + MySQL (Sequel): 7.452 seconds', \
