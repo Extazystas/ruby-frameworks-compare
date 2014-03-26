@@ -1,6 +1,7 @@
 source 'https://rubygems.org'
 
-gem 'sinatra'
+# gem 'sinatra'
+gem 'e'
 gem 'slim'
 gem 'sequel'
 gem 'mysql2'
